@@ -1,0 +1,11 @@
+date,source,text,user_id
+2025-04-28,app_store,"The new dashboard is clean and loads noticeably faster. Great improvement.",u_1042
+2025-04-28,support_ticket,"I keep getting a 504 timeout when trying to export reports with more than 500 rows.",u_2891
+2025-04-29,in_app_survey,"Onboarding was confusing. I spent 20 minutes looking for where to connect my data source.",u_3310
+2025-04-29,app_store,"Love the mobile app. The notification controls are exactly what I needed.",u_0487
+2025-04-30,support_ticket,"Our team is getting charged twice per month. We opened a ticket two weeks ago.",u_5502
+2025-04-30,in_app_survey,"Would love a way to duplicate a workflow instead of rebuilding it from scratch.",u_1187
+2025-05-01,app_store,"Filter combinations on the analytics page are slow. Three filters takes eight seconds.",u_2204
+2025-05-01,support_ticket,"After yesterday's update, clicking Save on any form silently fails. Data is just lost.",u_4410
+2025-05-01,in_app_survey,"The product is solid overall. I wish the keyboard shortcuts were documented.",u_0934
+2025-05-02,app_store,"Charts on the reports page are impossible to read on a phone screen.",u_3771
