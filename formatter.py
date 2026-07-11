@@ -32,8 +32,7 @@ def generate_digest(analyzed_items: list[dict]) -> str:
         sentiment_counts[item.get("sentiment", "neutral")] += 1
         theme_groups[item.get("theme", "other")].append(item)
     for theme in theme_groups:
-        theme_groups[theme].sort(key=lambda x: PRIORITY_ORDERed
-get(x.get("priority", "low"), 2))
+        theme_groups[theme].sort(key=lambda x: PRIORITY_ORDER.get(x.get("priority", "low"), 2))
     today = date.today().isoformat()
     lines = ["# Weekly Feedback Digest", "", f"Generated: {today}", "", "## Summary", "", f"Total items: {total}", "", "Sentiment breakdown:", ""]
     for s in ("positive", "neutral", "negative"):
