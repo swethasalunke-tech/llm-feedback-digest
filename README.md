@@ -14,7 +14,7 @@ A CLI tool that reads product feedback from CSV or JSON, uses the Anthropic Clau
 ## Install
 
 ```bash
-git clone https://github.com/your-username/llm-feedback-digest.git
+git clone https://github.com/swethasalunke-tech/llm-feedback-digest.git
 cd llm-feedback-digest
 python -m venv .venv
 source .venv/bin/activate
