@@ -63,6 +63,13 @@ class FeedbackAnalyzer:
         except json.JSONDecodeError as exc:
             raise RuntimeError(f"Could not parse Claude response as JSON: {exc}") from exc
 
+        if not isinstance(results, list) or len(results) != len(feedback_items):
+            got = len(results) if isinstance(results, list) else type(results).__name__
+            raise RuntimeError(
+                f"Claude returned {got} result(s) for {len(feedback_items)} feedback "
+                f"item(s); refusing to silently drop or misalign items."
+            )
+
         for result, original in zip(results, feedback_items):
             result.setdefault("original_text", original.get("text", ""))
 
